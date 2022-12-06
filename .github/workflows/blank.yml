@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print URL
-      run: echo "The current pull request URL is:${{ github.event.pull_request.url }}"
+      run: echo "The current pull request URL is:${{ github.event.pull_request.html_url }}"
