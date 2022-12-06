@@ -1,0 +1,13 @@
+name: Print Pull Request URL
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  print-url:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print URL
+      run: echo "The current pull request URL is:${{ github.event.pull_request.url }}"
